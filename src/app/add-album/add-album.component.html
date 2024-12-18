@@ -1,0 +1,18 @@
+<form #albumForm="ngForm" (ngSubmit)="onSubmit(albumForm)"> <label
+    for="title">title</label>
+     <input type="text" id="title" name="title" pattern="[a-zA-Z0-9] " required >
+     <div *ngIf="!albumForm.controls['title']?.valid && albumForm.controls['title']?.touched">
+        <p>obligatoire et ne doit contenir que des lettres ou des chiffres.</p>
+     </div>
+     <br><br>
+    
+     <label for="coverPicture">coverPicture</label>
+     <input type="text" id="coverPicture" name="coverPicture" ngModel minlength="5">
+
+
+     <div *ngIf="!albumForm.controls['coverPicture']?.valid && albumForm.controls['coverPicture']?.touched">
+      <p>  nest pas obligatoire et doit contenir au moins 5
+        caractères </p>
+      </div>
+      <button type="submit" [disabled]="!albumForm.valid">Ajouter</button>
+     </form>

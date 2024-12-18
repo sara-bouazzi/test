@@ -1,0 +1,21 @@
+{
+    "album": [
+      {
+        "id": "1",
+        "title": "11111",
+        "crationDate": 2023,
+        "archived": 0,
+        "coverPicture": "assets/images/image1.jpg"
+
+      },
+      {
+        "id": "2",
+        "title": "22222",
+        "crationDate": 2024,
+        "archived": 0,
+        "coverPicture": "assets/images/image2.jpg"
+
+      }
+    ]
+  }
+  
